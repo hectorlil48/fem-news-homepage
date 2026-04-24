@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:root {
+  /* Colors */
+  --white: hsl(0, 100%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --grey-300: hsl(233, 8%, 79%);
+  --grey-200: hsl(0, 0%, 85%);
+  --navy-950: hsl(240, 100%, 5%);
+  --navy-600: hsl(236, 13%, 42%);
+  --gold-400: hsl(35, 77%, 62%);
+  --red-500: hsl(4, 85%, 63%);
+
+  /* Typography */
+  --text-preset-1: 3.5rem; /* 56px */
+  --text-preset-2: 2.5rem; /* 40px */
+  --text-preset-3: 2rem; /* 32px */
+  --text-preset-4: 1.25rem; /* 20px */
+  --text-preset-5: 1.125rem; /* 18px */
+  --text-preset-6: 0.9375rem; /* 15px */
+  --text-preset-7: 0.875rem; /* 14px */
+
+  /* Line Height */
+  --lh-tight: 1; /* presets 1, 2, 3 */
+  --lh-snug: 1.2; /* preset 4 - 24px/20px */
+  --lh-normal: 1.333; /* preset 5 - 24px/18px */
+  --lh-relaxed: 1.733; /* preset 6 - 26px/15px */
+  --lh-loose: 1.714; /* preset 7 - 24px/14px */
+
+  /* Letter Spacing */
+  --ls-7: 4.38px; /* only preset 7 has letter spacing */
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  /* Spacing */
+  --spacing-100: 8px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-800: 64px;
+  --spacing-1100: 88px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--white);
+}
