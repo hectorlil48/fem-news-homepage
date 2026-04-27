@@ -1,14 +1,14 @@
-/* desktop default */
-.nav__hamburger {
-  display: none;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
 }
 
-/* mobile */
-@media (max-width: 768px) {
-  .nav__links {
-    display: none;
-  }
-  .nav__hamburger {
-    display: block;
-  }
+.nav__logo {
+  height: 28px;
+  width: 44.98px;
+}
+.nav__links {
+  display: none;
 }

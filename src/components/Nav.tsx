@@ -9,7 +9,7 @@ type NavProps = {
 
 const Nav = ({ isMenuOpen, setIsMenuOpen }: NavProps) => {
   return (
-    <nav className="nav">
+    <nav className="nav container">
       <a href="#" className="nav__logo">
         <img src={logo} alt="W." />
       </a>

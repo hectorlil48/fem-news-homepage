@@ -64,6 +64,7 @@ button {
 
   /* Spacing */
   --spacing-100: 8px;
+  --spacing-200: 16px;
   --spacing-300: 24px;
   --spacing-400: 32px;
   --spacing-500: 40px;
@@ -75,4 +76,16 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   background-color: var(--white);
+  padding: 0 var(--spacing-200);
+}
+
+.container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 80px;
+  }
 }
