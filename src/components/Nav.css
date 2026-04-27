@@ -12,3 +12,27 @@
 .nav__links {
   display: none;
 }
+
+@media (min-width: 1024px) {
+  .nav__logo {
+    height: 39.9px;
+    width: 64.09px;
+  }
+
+  .nav__links {
+    display: flex;
+    gap: var(--spacing-500);
+    font-size: var(--text-preset-6);
+    line-height: var(--lh-relaxed);
+    font-weight: var(--fw-regular);
+    color: var(--navy-600);
+  }
+
+  .nav__links a:hover {
+    color: var(--red-500);
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
+}
