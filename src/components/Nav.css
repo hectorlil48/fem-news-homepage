@@ -1,0 +1,14 @@
+/* desktop default */
+.nav__hamburger {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__hamburger {
+    display: block;
+  }
+}
