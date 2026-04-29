@@ -63,3 +63,10 @@
 .mobile-menu__links a:hover {
   color: var(--red-500);
 }
+
+@media (min-width: 768px) {
+  .mobile-menu__panel {
+    width: 312px;
+    padding-left: 36px;
+  }
+}
