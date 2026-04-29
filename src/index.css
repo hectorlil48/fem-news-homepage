@@ -87,6 +87,8 @@ body {
 .main__grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: var(--spacing-800);
+  margin-top: var(--spacing-400);
 }
 
 @media (min-width: 768px) {

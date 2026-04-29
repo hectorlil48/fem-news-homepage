@@ -1,3 +1,21 @@
-.hero {
-  border: 1px solid red;
+.hero picture {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero__content,
+.hero__description {
+  margin-top: var(--spacing-300);
+}
+
+.hero__content h1 {
+  font-size: var(--text-preset-2);
+  font-weight: var(--fw-extra-bold);
+  line-height: var(--lh-tight);
+  color: var(--navy-950);
 }
