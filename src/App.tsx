@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import MobileMenu from "./components/MobileMenu";
+import Hero from "./components/Hero";
+import NewsSidebar from "./components/NewsSidebar";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -23,6 +25,12 @@ function App() {
     <>
       <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <main>
+        <div className="main__grid container">
+          <Hero />
+          <NewsSidebar />
+        </div>
+      </main>
     </>
   );
 }

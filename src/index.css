@@ -84,8 +84,19 @@ body {
   margin: 0 auto;
 }
 
+.main__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media (min-width: 768px) {
   body {
     padding: 0 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__grid {
+    grid-template-columns: 2fr 1fr;
   }
 }
