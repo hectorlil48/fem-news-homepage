@@ -43,8 +43,19 @@
   color: var(--white);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  .hero__content {
+    display: flex;
+    gap: var(--spacing-400);
+  }
+
+  .hero__description {
+    margin-top: 0;
+    flex: 1;
+  }
+
   .hero__content h1 {
     font-size: var(--text-preset-1);
+    flex: 1;
   }
 }
