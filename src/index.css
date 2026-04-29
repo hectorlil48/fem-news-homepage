@@ -25,6 +25,7 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  font-family: inherit;
 }
 
 :root {
@@ -52,10 +53,10 @@ button {
   --lh-snug: 1.2; /* preset 4 - 24px/20px */
   --lh-normal: 1.333; /* preset 5 - 24px/18px */
   --lh-relaxed: 1.733; /* preset 6 - 26px/15px */
-  --lh-loose: 1.714; /* preset 7 - 24px/14px */
+  --lh-loose: 1.72; /* preset 7 - 24px/14px */
 
   /* Letter Spacing */
-  --ls-7: 4.38px; /* only preset 7 has letter spacing */
+  --ls-7: 4.2px; /* only preset 7 has letter spacing */
 
   /* Font Weights */
   --fw-regular: 400;
@@ -63,7 +64,7 @@ button {
   --fw-extra-bold: 800;
 
   /* Spacing */
-  --spacing-100: 8px;
+  --spacing-100: 12px;
   --spacing-200: 16px;
   --spacing-300: 24px;
   --spacing-400: 32px;
@@ -89,6 +90,12 @@ body {
   grid-template-columns: 1fr;
   gap: var(--spacing-800);
   margin-top: var(--spacing-400);
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 0 var(--spacing-400);
+  }
 }
 
 @media (min-width: 768px) {
