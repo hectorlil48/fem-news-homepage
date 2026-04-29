@@ -1,6 +1,5 @@
 /* Mobile Menu */
 .mobile-menu {
-  display: block;
   pointer-events: none;
 }
 
@@ -10,6 +9,7 @@
 
 .mobile-menu__overlay {
   position: fixed;
+  z-index: 50;
   inset: 0;
   background-color: hsla(240, 100%, 5%, 0.5);
   opacity: 0;
@@ -22,6 +22,7 @@
 
 .mobile-menu__panel {
   position: fixed;
+  z-index: 100;
   top: 0;
   right: 0;
   width: 256px;
@@ -64,9 +65,17 @@
   color: var(--red-500);
 }
 
-@media (min-width: 768px) {
+.mobile-menu__links li:last-child {
+  display: none;
+}
+
+@media (min-width: 600px) {
   .mobile-menu__panel {
     width: 312px;
     padding-left: 36px;
+  }
+
+  .mobile-menu__links li:last-child {
+    display: block;
   }
 }
