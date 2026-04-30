@@ -50,3 +50,14 @@
     font-size: var(--text-preset-2);
   }
 }
+
+@media (min-width: 1000px) {
+  .news-sidebar {
+    padding: 32.5px var(--spacing-300);
+    margin-bottom: 0;
+  }
+
+  .news-sidebar h2 {
+    font-size: var(--text-preset-3);
+  }
+}
