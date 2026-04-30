@@ -2,6 +2,7 @@
   background-color: var(--navy-950);
   color: var(--white);
   padding: 21.5px 20.5px;
+  margin-bottom: var(--spacing-800);
 }
 
 .news-sidebar h2 {
@@ -38,4 +39,14 @@
   font-weight: var(--fw-regular);
   line-height: var(--lh-relaxed);
   color: var(--grey-300);
+}
+
+@media (min-width: 600px) {
+  .news-sidebar {
+    padding: var(--spacing-400) 41.69px;
+  }
+
+  .news-sidebar h2 {
+    font-size: var(--text-preset-2);
+  }
 }
