@@ -1,3 +1,5 @@
+import "./ArticleCard.css";
+
 type ArticleCardProps = {
   number: string;
   title: string;

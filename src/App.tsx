@@ -56,7 +56,7 @@ function App() {
           <NewsSidebar />
         </section>
 
-        <section>
+        <section className="articles container">
           {articles.map((article) => (
             <ArticleCard key={article.number} {...article} />
           ))}
