@@ -9,7 +9,8 @@
 }
 
 .hero__content,
-.hero__description {
+.hero__description,
+.hero__description button {
   margin-top: var(--spacing-300);
 }
 
@@ -25,7 +26,6 @@
   font-weight: var(--fw-regular);
   line-height: var(--lh-relaxed);
   color: var(--navy-600);
-  margin-bottom: var(--spacing-300);
 }
 
 .hero__description button {
@@ -49,13 +49,13 @@
     gap: var(--spacing-400);
   }
 
-  .hero__description {
-    margin-top: 0;
+  .hero__content h1 {
+    font-size: var(--text-preset-1);
     flex: 1;
   }
 
-  .hero__content h1 {
-    font-size: var(--text-preset-1);
+  .hero__description {
+    margin-top: 0;
     flex: 1;
   }
 }
