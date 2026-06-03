@@ -56,7 +56,7 @@ button {
   --lh-loose: 1.72; /* preset 7 - 24px/14px */
 
   /* Letter Spacing */
-  --ls-7: 4.2px; /* only preset 7 has letter spacing */
+  --ls-7: 4.38px; /* only preset 7 has letter spacing */
 
   /* Font Weights */
   --fw-regular: 400;
@@ -93,6 +93,7 @@ body {
 }
 
 .articles {
+  margin: var(--spacing-800) auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-400);
@@ -104,7 +105,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
     padding-top: 89px;
   }
@@ -112,5 +113,15 @@ body {
   .main__grid {
     grid-template-columns: 1fr 350px;
     gap: var(--spacing-400);
+  }
+
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1044px) {
+  .articles {
+    gap: var(--spacing-500);
   }
 }
