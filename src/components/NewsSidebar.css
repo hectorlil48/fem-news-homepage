@@ -2,7 +2,6 @@
   background-color: var(--navy-950);
   color: var(--white);
   padding: 21.5px 20.5px;
-  margin-bottom: var(--spacing-800);
 }
 
 .news-sidebar h2 {
@@ -41,7 +40,7 @@
   color: var(--grey-300);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .news-sidebar {
     padding: var(--spacing-400) 41.69px;
   }
@@ -51,10 +50,9 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .news-sidebar {
     padding: 32.5px var(--spacing-300);
-    margin-bottom: 0;
   }
 
   .news-sidebar h2 {
