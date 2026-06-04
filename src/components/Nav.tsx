@@ -5,9 +5,10 @@ import "./Nav.css";
 type NavProps = {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
+  navLinks: { name: string; href: string }[];
 };
 
-const Nav = ({ isMenuOpen, setIsMenuOpen }: NavProps) => {
+const Nav = ({ isMenuOpen, setIsMenuOpen, navLinks }: NavProps) => {
   return (
     <nav className="nav container">
       <a href="#" className="nav__logo">
@@ -15,21 +16,11 @@ const Nav = ({ isMenuOpen, setIsMenuOpen }: NavProps) => {
       </a>
 
       <ul className="nav__links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">New</a>
-        </li>
-        <li>
-          <a href="#">Popular</a>
-        </li>
-        <li>
-          <a href="#">Trending</a>
-        </li>
-        <li>
-          <a href="#">Categories</a>
-        </li>
+        {navLinks.map((link) => (
+          <li key={link.name}>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))}
       </ul>
 
       <button

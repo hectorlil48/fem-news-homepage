@@ -4,9 +4,14 @@ import closeIcon from "../assets/images/icon-menu-close.svg";
 type MobileMenuProps = {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
+  navLinks: { name: string; href: string }[];
 };
 
-const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
+const MobileMenu = ({
+  isMenuOpen,
+  setIsMenuOpen,
+  navLinks,
+}: MobileMenuProps) => {
   return (
     <div
       className={`mobile-menu ${isMenuOpen ? "mobile-menu--open" : ""}`}
@@ -29,21 +34,11 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
         </button>
 
         <ul className="mobile-menu__links">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">New</a>
-          </li>
-          <li>
-            <a href="#">Popular</a>
-          </li>
-          <li>
-            <a href="#">Trending</a>
-          </li>
-          <li>
-            <a href="#">Categories</a>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.href}>{link.name}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
