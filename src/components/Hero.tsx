@@ -18,7 +18,7 @@ const Hero = () => {
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button>READ MORE</button>
+          <button type="button">READ MORE</button>
         </div>
       </div>
     </article>
