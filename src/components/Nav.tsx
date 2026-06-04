@@ -38,7 +38,7 @@ const Nav = ({ isMenuOpen, setIsMenuOpen }: NavProps) => {
         aria-expanded={isMenuOpen}
         onClick={() => setIsMenuOpen(true)}
       >
-        <img src={hamMenuIcon} alt="Hamburger menu icon" aria-hidden="true" />
+        <img src={hamMenuIcon} alt="" aria-hidden="true" />
       </button>
     </nav>
   );
