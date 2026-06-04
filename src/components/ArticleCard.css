@@ -6,6 +6,7 @@
 .article img {
   width: 100px;
   height: 127px;
+  object-fit: cover;
 }
 
 .article__number {
