@@ -54,6 +54,14 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <>
       <Nav
@@ -66,7 +74,7 @@ function App() {
         setIsMenuOpen={setIsMenuOpen}
         navLinks={navLinks}
       />
-      <main>
+      <main inert={isMenuOpen ? true : undefined}>
         <section className="main__grid container">
           <Hero />
           <NewsSidebar />
