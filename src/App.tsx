@@ -74,7 +74,7 @@ function App() {
         setIsMenuOpen={setIsMenuOpen}
         navLinks={navLinks}
       />
-      <main inert={isMenuOpen ? true : undefined}>
+      <main>
         <section className="main__grid container">
           <Hero />
           <NewsSidebar />
