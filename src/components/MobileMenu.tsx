@@ -8,7 +8,10 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
   return (
-    <div className={`mobile-menu ${isMenuOpen ? "mobile-menu--open" : ""}`}>
+    <div
+      className={`mobile-menu ${isMenuOpen ? "mobile-menu--open" : ""}`}
+      inert={!isMenuOpen}
+    >
       {/* dark overlay */}
       <div
         className="mobile-menu__overlay"
