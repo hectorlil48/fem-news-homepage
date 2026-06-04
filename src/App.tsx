@@ -29,6 +29,14 @@ const articles = [
   },
 ];
 
+const navLinks = [
+  { name: "Home", href: "#" },
+  { name: "New", href: "#" },
+  { name: "Popular", href: "#" },
+  { name: "Trending", href: "#" },
+  { name: "Categories", href: "#" },
+];
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -48,8 +56,16 @@ function App() {
 
   return (
     <>
-      <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <Nav
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        navLinks={navLinks}
+      />
+      <MobileMenu
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        navLinks={navLinks}
+      />
       <main>
         <section className="main__grid container">
           <Hero />
