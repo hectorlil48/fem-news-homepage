@@ -17,6 +17,11 @@
   font-weight: var(--fw-extra-bold);
   line-height: var(--lh-snug);
   margin-bottom: var(--spacing-100);
+  cursor: pointer;
+}
+
+.news-sidebar__article h3:hover {
+  color: var(--gold-400);
 }
 
 .news-sidebar__article--first {
